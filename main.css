@@ -99,19 +99,20 @@
 .pf-lightbox .pf-gallery-top,.pf-lightbox .pf-lightbox-media,.pf-lightbox .pf-gallery-nav,.pf-lightbox .pf-lightbox-caption{display:none!important}
 .pf-album-m{display:flex;flex-direction:column;gap:16px;padding:0 0 32px}
 .pf-album-back{position:sticky;top:8px;z-index:5;align-self:flex-start;margin:8px 0 0 16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:#211c1ecc;color:#fff;font-size:22px;line-height:1;cursor:pointer;backdrop-filter:blur(6px)}
-.pf-album-head{display:flex;flex-direction:column;gap:4px;padding:0 16px;margin-top:-28px;text-align:left}
-.pf-album-name{font-family:var(--ds-font-display);font-size:24px;line-height:1.2;padding-left:56px;min-height:44px;display:flex;align-items:center}
+.pf-album-head{display:flex;flex-direction:column;gap:4px;padding:0 16px;margin-top:12px;text-align:center;align-items:center}
+.pf-album-name{font-family:var(--ds-font-display);font-size:24px;line-height:1.2;text-align:center}
 .pf-album-cat{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--pf-accent)}
 .pf-album-sum{font-size:14px;color:#ffffffb3}
 .pf-album-detail{font-size:12px;line-height:1.4;color:#ffffff9e}
-.pf-album-link{display:inline-block;margin-top:8px;align-self:flex-start;padding:8px 16px;border-radius:999px;background:var(--pf-accent);color:#fff;font-size:13px;font-weight:600;text-decoration:none}
+.pf-album-link{display:inline-block;margin-top:8px;align-self:center;padding:8px 16px;border-radius:999px;background:var(--pf-accent);color:#fff;font-size:13px;font-weight:600;text-decoration:none}
 .pf-album-img{display:block;width:100%;height:auto}
 }
 .file-group>.file-group-label{margin-bottom:0!important}
 .pf-stats{margin-top:0!important}
 .pf-work-intl{margin-top:48px!important;margin-bottom:32px!important}
 @media(min-width:900px) and (min-height:600px){
-#root{scroll-snap-type:y proximity}
+#root{scroll-snap-type:y mandatory}
+.pf>.pf-work-anchor:nth-of-type(2){scroll-snap-align:start}
 .pf>section.file-group,.pf>.pf-work-anchor:first-of-type,.pf>.pf-reveal:has(>.pf-cta){box-sizing:border-box;min-height:var(--pg,var(--app-height,100vh));display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;margin-top:0!important}
 .pf>.pf-hero{box-sizing:border-box;min-height:calc(var(--pg,var(--app-height,100vh)) - 51px);align-content:center;scroll-snap-align:start;margin-top:0!important}
 .pf>.pf-work-anchor:first-of-type>.file-group{margin:0!important}
